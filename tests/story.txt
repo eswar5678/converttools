@@ -1,0 +1,7 @@
+The Little Tool That Could
+
+Once upon a time, a small static website decided it would never upload anyone's files. It learned to merge PDFs, to turn photos into documents, and to pull text out of PDFs, all inside the visitor's own browser.
+
+People asked: how can this be free? The little site replied: because there is no server bill when your processor does the work. And everyone downloaded their converted files happily ever after.
+
+The end.

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConvertTools — Free PDF &amp; Document Tools (100% in your browser)</title>
+  <meta name="description" content="Merge PDFs, merge Word docs, convert photos to PDF, Word to PDF, PDF to Word or images and more. Free, private, and runs entirely in your browser — no uploads." />
+  <!-- Security: locked-down Content Security Policy — static site, no inline scripts,
+       no third-party origins, no objects/forms. Files are processed locally only. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'" />
+  <meta name="referrer" content="no-referrer" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cpath d='M55 18 L30 55 h14 L42 82 L70 45 h-16 z' fill='white'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Decorative gradient blobs -->
+  <div class="blob blob-a" aria-hidden="true"></div>
+  <div class="blob blob-b" aria-hidden="true"></div>
+  <div class="blob blob-c" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="ConvertTools home">
+      <span class="logo-bolt">⚡</span> Convert<span class="logo-accent">Tools</span>
+    </a>
+    <div class="header-badges">
+      <span class="badge badge-lock">🔒 100% client-side</span>
+      <span class="badge">✨ 8 free tools</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Every file tool you need,<br /><span class="grad-text">free &amp; private.</span></h1>
+      <p class="hero-sub">
+        Merge, convert and transform PDFs, Word documents and images — right inside your
+        browser. Your files <strong>never leave your device</strong>. No sign-up. No watermarks. No limits.
+      </p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">8</span><span class="stat-label">tools</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">0</span><span class="stat-label">uploads</span></div>
+        <div class="stat-sep"></div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">usage</span></div>
+      </div>
+    </section>
+
+    <!-- TOOL GRID (cards injected by JS) -->
+    <section class="tools-section">
+      <h2 class="section-title">Pick a tool</h2>
+      <div class="tools-grid" id="tools-grid"></div>
+    </section>
+
+    <!-- PRIVACY STRIP -->
+    <section class="privacy-strip">
+      <div class="privacy-card">
+        <div class="privacy-icon">🔒</div>
+        <h3>Private by design</h3>
+        <p>Every conversion happens locally with JavaScript. Your documents are processed in your browser's memory and never touch a server.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="privacy-icon">⚡</div>
+        <h3>Instant &amp; free</h3>
+        <p>No queues, no accounts, no daily caps, no watermarks. Open the page, drop a file, download the result.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="privacy-icon">🌐</div>
+        <h3>Works offline</h3>
+        <p>The whole site is static and self-contained. Once loaded it even keeps working if you lose your connection.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>ConvertTools</strong> — free, open, in-browser file utilities.</p>
+    <p class="footer-note">Built for GitHub Pages · No tracking · No cookies · Files never leave your device</p>
+  </footer>
+
+  <!-- Modal + toast + hidden render host -->
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+  <div id="render-host" aria-hidden="true"></div>
+
+  <!-- Libraries (all local — no CDN needed) -->
+  <script src="vendor/pdf-lib.min.js"></script>
+  <script src="vendor/pdf.min.js"></script>
+  <script src="vendor/jszip.min.js"></script>
+  <script src="vendor/mammoth.browser.min.js"></script>
+  <script src="vendor/docx.umd.js"></script>
+  <script src="vendor/html2pdf.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
